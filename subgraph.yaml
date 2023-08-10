@@ -1,16 +1,16 @@
 specVersion: 0.0.2
-description: Uniswap is a decentralized protocol for automated token exchange on Ethereum.
-repository: https://github.com/Uniswap/uniswap-v2-subgraph
+description: Exoswap is a decentralized protocol for automated token exchange on Stratos.
+repository: https://github.com/exoswapio/v2-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: Factory
-    network: mainnet
+    network: mesos
     source:
-      address: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+      address: '0x2c3c0eb23c9E7140eb7B7903bE217403c3BEFa6f'
       abi: Factory
-      startBlock: 10000834
+      startBlock: 311169
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
@@ -34,7 +34,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: Pair
-    network: mainnet
+    network: mesos
     source:
       abi: Pair
     mapping:
