@@ -8,9 +8,9 @@ dataSources:
     name: Factory
     network: mesos
     source:
-      address: '0x2c3c0eb23c9E7140eb7B7903bE217403c3BEFa6f'
+      address: '0x4790aC80b681f4aFaBDB51B1e046238eE571fEB3'
       abi: Factory
-      startBlock: 311169
+      startBlock: 338696
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.3
